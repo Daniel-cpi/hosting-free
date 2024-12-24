@@ -1,74 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hosting SA-MP</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA-MP Hosting Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="assets/logo.png" alt="Logo Hosting" class="logo">
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#packages">Paket Hosting</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#contact">Kontak</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <h1>SA-MP Hosting Dashboard</h1>
+        <p>Manage your SA-MP servers easily</p>
+    </header>
 
-  <section id="home" class="hero">
-    <h1>Hosting SA-MP Terbaik</h1>
-    <p>Dapatkan server berkualitas tinggi dengan harga terjangkau untuk komunitas SA-MP Anda.</p>
-    <a href="#packages" class="btn">Lihat Paket</a>
-  </section>
+    <main>
+        <!-- Server Information -->
+        <section id="server-info">
+            <h2>Server Information</h2>
+            <div class="info-box">
+                <p><strong>Server Status:</strong> <span id="server-status">Offline</span></p>
+                <p><strong>Server IP:</strong> 144.76.57.59:19478</p>
+                <p><strong>CPU Usage:</strong> <span id="cpu-usage">0 GHz / 1 GHz</span></p>
+                <p><strong>RAM Usage:</strong> <span id="ram-usage">0 GB / 1 GB</span></p>
+                <p><strong>Disk Usage:</strong> <span id="disk-usage">0.27 GB / 3 GB</span></p>
+            </div>
+            <button id="start-server">Start Server</button>
+            <button id="stop-server">Stop Server</button>
+        </section>
 
-  <section id="packages">
-    <h2>Paket Hosting</h2>
-    <div class="package">
-      <h3>Paket Basic</h3>
-      <p>50 Player Slots</p>
-      <p>1 GB RAM</p>
-      <p>Rp50.000/bulan</p>
-      <button>Pesan Sekarang</button>
-    </div>
-    <div class="package">
-      <h3>Paket Premium</h3>
-      <p>100 Player Slots</p>
-      <p>2 GB RAM</p>
-      <p>Rp100.000/bulan</p>
-      <button>Pesan Sekarang</button>
-    </div>
-    <div class="package">
-      <h3>Paket Ultimate</h3>
-      <p>200 Player Slots</p>
-      <p>4 GB RAM</p>
-      <p>Rp200.000/bulan</p>
-      <button>Pesan Sekarang</button>
-    </div>
-  </section>
+        <!-- Server Actions -->
+        <section id="server-actions">
+            <h2>Server Actions</h2>
+            <ul>
+                <li><button>Console</button></li>
+                <li><button>Gamemodes</button></li>
+                <li><button>RCON</button></li>
+                <li><button>Settings</button></li>
+                <li><button>Diagnostics</button></li>
+                <li><button>Files</button></li>
+                <li><button>Backups</button></li>
+                <li><button>Reinstall</button></li>
+            </ul>
+        </section>
+    </main>
 
-  <section id="about">
-    <h2>Tentang Kami</h2>
-    <p>Kami menyediakan layanan hosting SA-MP terbaik dengan uptime 99,9% dan dukungan pelanggan 24/7.</p>
-  </section>
+    <footer>
+        <p>&copy; 2024 SA-MP Hosting</p>
+    </footer>
 
-  <section id="contact">
-    <h2>Kontak Kami</h2>
-    <form>
-      <input type="text" placeholder="Nama" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Pesan Anda"></textarea>
-      <button type="submit">Kirim</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Hosting SA-MP. Semua Hak Dilindungi.</p>
-  </footer>
+    <script src="script.js"></script>
 </body>
-</html>
+  </html>
